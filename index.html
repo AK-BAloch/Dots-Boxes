@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ak Dots & Boxes — A vs K</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <!-- Game title + names -->
+    <div>
+      <h1>Ak Dots & Boxes</h1>
+      <p class="names">
+        Naeem Shahmeem, Ibrahim Essa, Noroz Khan, Adnan, Mahmood, Shoaib
+      </p>
+    </div>
+
+    <div class="controls">
+      <label>Boxes per side:
+        <select id="sizeSelect">
+          <option>3</option>
+          <option selected>5</option>
+          <option>6</option>
+          <option>8</option>
+        </select>
+      </label>
+      <button id="newGameBtn" class="btn">New Game</button>
+    </div>
+
+    <div class="status">
+      <div class="player pA">
+        <span class="badge">A</span>
+        <span>Score: <b id="scoreA">0</b></span>
+      </div>
+      <div class="turn" id="turnText">Turn: A</div>
+      <div class="player pK">
+        <span class="badge">K</span>
+        <span>Score: <b id="scoreK">0</b></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Board created by JS -->
+    <div id="board" class="board"></div>
+  </main>
+
+  <footer class="info">
+    Tip: Click/tap the short blue segments to draw a line. Completing a square
+    gives you a point and another move.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
